@@ -114,7 +114,7 @@ export default {
       };
     },
     pageLink() {
-      const host = this.$themeConfig.hostname || location.host;
+      const host = this.$themeConfig.hostname;
       return `${host}${this.$page.path}`;
     },
   },

@@ -1,18 +1,21 @@
 /*
  * @Author: 高大鹏
  * @Date: 2021-12-14 10:12:48
- * @LastEditTime: 2021-12-14 11:29:36
+ * @LastEditTime: 2021-12-14 14:11:34
  * @LastEditors: 高大鹏
  * @Description:
  * @FilePath: /blog-template/docs/.vuepress/config.js
  */
 module.exports = {
+  base: '/blog-template/',
+  dest: 'dist',
   title: 'TEMPLATE',
   // 网站描述
   description: '热爱我的热爱',
 
   theme: require.resolve('../../vuepress-theme-maker'),
   themeConfig: {
+    hostname: 'https://underglaze-blue.github.io/blog-template',
     // 网站logo
     logo: '/images/logo.png',
     // Search 提示
