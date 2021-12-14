@@ -99,6 +99,9 @@ export default {
     PostNav,
     Reward,
   },
+  mounted() {
+    this.host = window.location.host || "";
+  },
   computed: {
     isShowReward() {
       if (this.$frontmatter.reward === false) {
@@ -114,7 +117,7 @@ export default {
       };
     },
     pageLink() {
-      const host = this.$themeConfig.hostname;
+      const host = this.$themeConfig.hostname || this.host;
       return `${host}${this.$page.path}`;
     },
   },

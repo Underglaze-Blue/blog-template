@@ -1,7 +1,7 @@
 /*
  * @Author: 高大鹏
  * @Date: 2021-12-14 10:12:48
- * @LastEditTime: 2021-12-14 14:11:34
+ * @LastEditTime: 2021-12-14 15:37:43
  * @LastEditors: 高大鹏
  * @Description:
  * @FilePath: /blog-template/docs/.vuepress/config.js
@@ -12,6 +12,9 @@ module.exports = {
   title: 'TEMPLATE',
   // 网站描述
   description: '热爱我的热爱',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
 
   theme: require.resolve('../../vuepress-theme-maker'),
   themeConfig: {
@@ -19,7 +22,7 @@ module.exports = {
     // 网站logo
     logo: '/images/logo.png',
     // Search 提示
-    searchPlaceholder: 'Search',
+    searchPlaceholder: '找什么呢~ ~',
     // Search 建议列表条目数
     searchMaxSuggestions: 10,
     nav: [
