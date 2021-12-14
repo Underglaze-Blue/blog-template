@@ -54,7 +54,7 @@
           <ul>
             <li class="article-copyright__item">
               <strong class="article-copyright__title">Last-updated<span>:</span></strong>
-              <p class="article-copyright__text">{{$page.lastUpdated || '上次更新'}}</p>
+              <p class="article-copyright__text">{{$page.lastUpdated || '----/--/-- --:--:--'}}</p>
             </li>
             <!-- <li class="article-copyright__item">
               <strong class="article-copyright__title">Copyright<span>:</span></strong>
