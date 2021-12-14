@@ -5,7 +5,7 @@ npm run build # 生成静态文件
 cd dist # 进入生成的文件夹
 
 # deploy to github
-githubUrl=https://Underglaze-Blue:${GITHUB_TOKEN}@github.com/Underglaze-Blue/blog.git
+githubUrl=https://Underglaze-Blue:${GITHUB_TOKEN}@github.com/Underglaze-Blue/blog-template.git
 git config --global user.name "Underglaze-Blue"
 git config --global user.email "lepapillonangel@gmail.com"
 git init
