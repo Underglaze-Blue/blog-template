@@ -1,7 +1,7 @@
 /*
  * @Author: 高大鹏
  * @Date: 2021-12-14 10:12:48
- * @LastEditTime: 2021-12-14 16:26:06
+ * @LastEditTime: 2021-12-16 00:01:44
  * @LastEditors: 高大鹏
  * @Description:
  * @FilePath: /blog-template/docs/.vuepress/config.js
@@ -18,7 +18,7 @@ module.exports = {
 
   theme: require.resolve('../../vuepress-theme-maker'),
   themeConfig: {
-    hostname: 'https://underglaze-blue.github.io/blog-template',
+    lastUpdated: true,
     // 网站logo
     logo: '/images/logo.png',
     // Search 提示
@@ -30,17 +30,9 @@ module.exports = {
       { text: 'Home', link: '/' },
       // 多级菜单
       {
-        text: 'Share', items: [
-          {
-            text: '1',
-            link: '/test'
-          }, {
-            text: '2',
-            link: '/demo'
-          }]
+        text: 'Share',
+        link: '/_post/share.md'
       },
-      // 外部链接
-      { text: 'External', link: 'https://google.com' },
     ],
     blog: {
       directories: [

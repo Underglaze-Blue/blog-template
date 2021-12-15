@@ -62,6 +62,10 @@
                   BY-NC-ND 4.0</a>）</p>
             </li> -->
             <li class="article-copyright__item">
+              <strong class="article-copyright__title">Sign<span>:</span></strong>
+              <p class="article-copyright__text">热爱我的热爱</p>
+            </li>
+            <li class="article-copyright__item">
               <strong class="article-copyright__title">Link<span>:</span></strong>
               <p class="article-copyright__text"><a
                   :href="pageLink"
@@ -98,6 +102,11 @@ export default {
     Comments,
     PostNav,
     Reward,
+  },
+  data() {
+    return {
+      host: "",
+    };
   },
   mounted() {
     this.host = window.location.host || "";
