@@ -127,7 +127,8 @@ export default {
     },
     pageLink() {
       const host = this.$themeConfig.hostname || this.host;
-      return `${host}${this.$page.path}`;
+      const path = this.$withBase(this.$page.path);
+      return `${host}${path}`;
     },
   },
 };
